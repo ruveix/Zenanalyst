@@ -11,7 +11,8 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 .allowedOrigins(
                     "http://localhost:3000", 
-                    "https://688de03ba869ce939d23c599--subtle-vacherin-218498.netlify.app/"
+                    "https://688de03ba869ce939d23c599--subtle-vacherin-218498.netlify.app/",
+                    "https://subtle-vacherin-218498.netlify.app/"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
