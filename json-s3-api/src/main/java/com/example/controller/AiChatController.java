@@ -17,7 +17,7 @@ public class AiChatController {
     private final WebClient webClient;
     private final String geminiApiKey;
 
-    public AiChatController(@Value("${gemini.api.key}") String apiKey) {
+    public AiChatController(@Value("${GEMINI_API_KEY}") String apiKey) {
         this.geminiApiKey = apiKey;
         this.webClient = WebClient.builder()
             .baseUrl("https://generativelanguage.googleapis.com")
