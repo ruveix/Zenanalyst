@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Layout, Menu } from 'antd';
 
 import QuarterlyDashboard from './pages/QuarterlyDashboard';
@@ -9,7 +9,6 @@ import ConcentrationDashboard from './pages/ConcentrationDashboard';
 const { Header, Content } = Layout;
 
 export default function App() {
-  const [page, setPage] = useState('quarterly');
   const [current, setCurrent] = useState('quarterly'); // <-- Add this
 
   const menuItems = [
