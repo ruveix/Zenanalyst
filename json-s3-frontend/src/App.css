@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.big-table .ant-table-thead > tr > th,
+.big-table .ant-table-tbody > tr > td {
+  font-size: 18px;    /* Make text bigger */
+  padding: 16px 12px; /* Make cells taller/wider */
+}
+.big-table .ant-table-tbody > tr > td {
+  min-height: 48px;
+}
+.ant-table-cell {
+  font-size: 18px;
+  padding: 14px 10px;
+}
+.big-table .ant-table-content {
+  min-width: 1800px !important;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
